@@ -1,0 +1,17 @@
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--google) {
+    @import url($font-url--google);
+}
+
+// Calculate px to em values
+
+@function em($target, $context: $base__font-size) {
+    @return ($target / $context) * 1em;
+}
+
+// Unitless Line Height Calculation
+
+@function   get-line-height($font-size, $line-height) {
+    @return $line-height / $font-size;
+}

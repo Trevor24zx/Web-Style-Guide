@@ -1,0 +1,29 @@
+// btn and link colors
+
+@each $theme, $color in $ui-colors {
+    .btn--#{$theme} {
+        @include border-radius(5px);
+        display: block;
+        width: 100%;
+        padding: em(15px);
+        text-transform: uppercase;
+        background-color: $color;
+        margin: em(25px) 0;
+        border: none;
+        color: white;
+    }
+}
+
+.link {
+    color: $malibu;
+    font-weight: $font-weight--bold;
+}
+
+.btn--default {
+    margin: em(16px) 0;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    @include border-radius(5px);
+    padding: em(15px);
+}

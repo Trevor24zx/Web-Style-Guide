@@ -1,0 +1,67 @@
+// Variables for fonts, breakpoints, and colors
+
+//Base Colors
+
+$viking          : #58E1C1;
+$malibu           :#51DDFC;
+$emerald         : #63CC82;
+$sunglo          : #E4757A;
+$coral           : #FD7856;
+$purple-majesty  : #927BC1;
+$shakespeare     : #3FABCA;
+$french-lilac    : #DEB2EE;
+$vista-blue      : #80E8D1;
+$sea-pink        : #EC9FA3;
+$vivid-tangerine : #FD9F85;
+$moss            : #88D9A0;
+$suva-gray       : #838183;
+
+// Font Stacks
+
+$font-url--google         :'https://fonts.google.com/specimen/Lato?selection.family=Lato:100,300,400,700,900';
+$font-family--primary     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights 
+
+$font-weight--thin        : 100;
+$font-weight--light       : 300;
+$font-weight--medium      : 400;
+$font-weight--bold        : 700;
+$font-weight--ultra-bold  : 900;
+
+// Color Usage
+
+
+// UI Colors Map
+
+$ui-colors: (
+    default        : $malibu,
+    success        : $emerald,
+    error          : $sunglo,
+    warning        : $coral,
+    info           : $purple-majesty
+);
+
+// Grid Map
+
+$grid-colors: (
+    12  : $vista-blue,
+    6   : $shakespeare,
+    4   : $malibu,
+    3   : $french-lilac,
+    5   : $moss,
+    7   : $sea-pink,
+    8   : $vivid-tangerine
+);
+
+// Text Size
+
+$base__font-size  : 16px;
+$base__line       : 24px;
+
+// Breakpoints
+
+$brkpoint-sm   : 1px;
+$brkpoint-md   : 768px;
+$brkpoint-lg   : 1100px;

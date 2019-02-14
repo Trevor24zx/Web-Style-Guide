@@ -1,0 +1,27 @@
+// Base Form Layout
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    .img--avatar {
+        margin: em(12px) auto;
+    }
+
+    .form__label--hidden {
+        display: none;
+    }
+
+    .form__input {
+        border-style: none;
+        border-bottom: 8px solid $malibu;
+        padding: em(15px);
+        margin: em(8px) em(15px);
+        
+    }
+
+    .form__input:focus {
+        outline: none;  
+    }
+
+}

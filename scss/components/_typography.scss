@@ -1,0 +1,25 @@
+// Headline
+
+.headline--primary {
+    color: $viking;
+    font-size: em(26px);
+    padding-left: em(6px);
+}
+
+.headline--secondary {
+    text-align: left;
+    font-family: $font-family--primary;
+    margin: em(12px) 0;
+    font-weight: $font-weight--thin;
+}
+
+.blockquote {
+    font-weight: $font-weight--thin;
+    // padding: 8px;
+    margin: em(17px) em(14px);
+    font-size: em(21px);
+    padding-left: em(12px);
+    border-left: 7px solid $viking;
+    border-radius: 5px 0px 0px 5px;
+    font-style: italic;
+}

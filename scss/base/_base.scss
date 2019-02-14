@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    color: #939393;  
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    line-height: get-line-height(22px, 32px);
+    font-family: $font-family--primary;
+}

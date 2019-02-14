@@ -1,0 +1,50 @@
+// Mixins
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+}
+
+
+@mixin grid-layout($grid) {
+    display: block;
+    width: 100%;
+    padding: em(8px);
+    background-color: $color;
+    margin: em(3px) 0;
+    border: none;
+    color: $suva-gray;
+    font-weight: $font-weight--medium;
+}
+
+// Media Queries
+
+@mixin mq($break) {
+    @if $break == "small" {
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
+            @content;
+        }     
+    }
+    @else if $break == "medium" {
+        @media (min-width: $brkpoint-md + 1) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: $brkpoint-lg) {
+            @content;
+        }
+    }
+    @else {
+        @error "Whoops! No value could be retrieved for '#{$break}'."
+    }
+}
+
+// Flexbox settings
+
+@mixin flexy($flex-dir, $just-con) {
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $just-con;
+}
