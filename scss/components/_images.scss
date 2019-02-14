@@ -2,7 +2,8 @@
 
 
 .img--logo {
-    @extend .img--avatar;
+    display: block;
+    margin: auto;
 }
 
 .img--frame {
@@ -12,5 +13,10 @@
 }
 
 .img--avatar {
+    display: block;
+    margin: auto;
+    @include mq(large) {
+        width: 50%;
+    }
 
 }
