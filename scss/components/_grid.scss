@@ -40,11 +40,10 @@
 
   // .grid__row
   &__row {
+    @include flexy(column, center) {
     padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-size: em(17px);
+  }
     
     
 
@@ -91,7 +90,7 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(medium) {
 
       // add grid gutter
       margin-left: 10px;
@@ -99,10 +98,7 @@
   }
 }
 
-@media (min-width: 769px) {
-.grid__col--12:nth-of-type(1) {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-  }  
+.grid__row:nth-of-type(5) {
+ display: flex;
+ flex-direction: row;
 }

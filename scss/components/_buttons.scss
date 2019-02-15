@@ -11,6 +11,11 @@
         margin: em(25px) 0;
         border: none;
         color: white;
+        @include mq(medium) {
+            @include flexy(row, center) {
+            }
+
+        }
     }
 }
 

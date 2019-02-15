@@ -47,4 +47,5 @@
     display: flex;
     flex-direction: $flex-dir;
     justify-content: $just-con;
+    @content;
 }

@@ -1,24 +1,32 @@
 // Navigation
 
 .nav{
-    padding: 12px;
     padding-left: 0;
+    @include mq(medium) {
+        @include flexy(row, center); 
+    }
 
     li {
         @include border-radius(5px);
         text-align: center;
-        margin: 0.5em 1em;
-        padding: 0.5em 5em;
-        a {
-            color: $suva-gray;
+        padding: em(8px) em(25px);
+        margin: em(8px) em(16px);
         }
-
-        a:hover {
-            @include border-radius(5px);
-            background-color: $vista-blue;
-           
-            padding: 0.5em 5em;
-        }
-    }
 }
 
+.nav a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: $vista-blue;
+    padding: 1em 8em;
+    border-radius: 5px;
+    margin: 1em -8em;
+    margin-right: -8em;
+  }
+  
+  @media (min-width: 769px) {
+    .nav a:hover {
+      padding: 1rem 1rem;
+      margin: 1rem -1rem;
+    }
+  }
