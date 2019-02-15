@@ -14,8 +14,7 @@
     }
 }
 .link {
-    color: $malibu;
-    font-weight: $font-weight--bold;
+    @extend %link-prop;
 }
 
 @include mq(medium) {

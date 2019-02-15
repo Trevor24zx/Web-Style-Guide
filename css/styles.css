@@ -1,4 +1,8 @@
 @import url("https://fonts.google.com/specimen/Lato?selection.family=Lato:100,300,400,700,900");
+.link {
+  color: #51DDFC;
+  font-weight: 700; }
+
 * {
   box-sizing: border-box;
   color: #939393; }
@@ -262,7 +266,8 @@ p {
     background-clip: padding-box;
     text-align: center;
     padding: 0.5em 1.5625em;
-    margin: 0.5em 1em; }
+    margin: 0.5em;
+    margin-left: 0.5em; }
 
 .nav a:hover {
   text-decoration: none;
@@ -358,10 +363,6 @@ p {
   margin: 1.5625em 0;
   border: none;
   color: white; }
-
-.link {
-  color: #51DDFC;
-  font-weight: 700; }
 
 @media (min-width: 769px) {
   .btn--default {
