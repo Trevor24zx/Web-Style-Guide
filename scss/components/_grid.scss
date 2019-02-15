@@ -91,14 +91,18 @@
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @include mq(medium) {
-
       // add grid gutter
       margin-left: 10px;
     }
   }
 }
 
-.grid__row:nth-of-type(5) {
- display: flex;
- flex-direction: row;
+// Flexbox for buttons
+
+.grid__col--12 {
+  @include mq(medium) {
+    @include flexy(row, center); 
 }
+}
+
+

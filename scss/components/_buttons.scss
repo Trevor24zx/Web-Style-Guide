@@ -11,24 +11,26 @@
         margin: em(25px) 0;
         border: none;
         color: white;
-        @include mq(medium) {
-            @include flexy(row, center) {
-            }
-
-        }
     }
 }
-
 .link {
     color: $malibu;
     font-weight: $font-weight--bold;
 }
 
-.btn--default {
-    margin: em(16px) 0;
-    border: none;
-    text-transform: uppercase;
-    color: white;
-    @include border-radius(5px);
-    padding: em(15px);
+@include mq(medium) {
+    @each $theme, $color in $ui-colors {
+        .btn--#{$theme} {
+            @include border-radius(5px);
+            @include flexy(row, center) {
+            font-weight: $font-weight--ultra-bold;
+            padding: em(15px);
+            text-transform: uppercase;
+            background-color: $color;
+            margin: em(25px);
+            border: none;
+            color: white;
+            }
+        }
+    }
 }
